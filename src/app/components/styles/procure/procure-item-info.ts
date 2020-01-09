@@ -46,6 +46,10 @@ export class ProcureItemInfoComponent extends BaseItemInfoComponent {
     return format_number(x);
   }
 
+  parseInt(s) {
+    return parseInt(s)
+  }
+
   relative(x: string) {
     if (x) {
       return '<span title="' + x + '">' + moment(x).fromNow() + '</span>';
